@@ -15,6 +15,14 @@ namespace MeanBookApi
 
             config.MapHttpAttributeRoutes();
             config.Routes.MapHttpRoute(
+                name: "Index",
+                routeTemplate: "",
+                defaults: new {
+                    controller = "Index",
+                    action = "Index"
+                }
+            );
+            config.Routes.MapHttpRoute(
                 name: "ActionApi",
                 routeTemplate: "api/{controller}/{action}/{id}/{extraParam}",
                 defaults: new {

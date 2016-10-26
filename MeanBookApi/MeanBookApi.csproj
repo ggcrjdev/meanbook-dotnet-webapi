@@ -122,6 +122,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\IndexController.cs" />
     <Compile Include="Controllers\RequestResponse\UsernameRequest.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\RequestResponse\PostsAddResponse.cs" />
