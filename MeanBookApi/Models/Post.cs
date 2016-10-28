@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace MeanBookApi.Models
 {
@@ -12,7 +10,7 @@ namespace MeanBookApi.Models
         public DateTime timestamp { get; set; }
         public string text { get; set; }
         public int likes { get; set; }
-        public List<Comment> comments { get; set; }
+        public IList<Comment> comments { get; set; }
         public bool hasComments { get; set; }
         public int commentsCount { get; set; }
     }
